@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #090909;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  font-family: Poppins, "Bruno Ace";
+  border: 0;
+  font-size: 20px;
+}
+
+button {
+  background-color: transparent;
+  color: #8800b5;
+  padding: 13px 36px;
+  border: 2px solid #8800b5;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.5s;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 120%;
+  height: 220%;
+  background-color: #8800b5;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+button:hover:before {
+  top: -50%;
+  left: -10%;
+}
+
+/* btn -2 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #090909;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  border: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+button {
+  background-color: hsl(208, 58%, 50%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.default-btn,
+.hover-btn {
+  padding: 12px 24px;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+}
+
+.hover-btn {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: hsl(208, 76%, 40%);
+  transform: translate(0%, 100%);
+}
+
+button:hover .hover-btn {
+  transform: translate(0%, 0%);
+}
+
+button:hover .default-btn {
+  transform: translate(0%, -100%);
+}
+
+
+</style>
+
+  </head>
+  <body>
+    <button>Hover me</button>
+
+<!-- btn-2 -->
+    <button id>
+        <div class="default-btn">
+          <i class="bi bi-download"></i>
+          <span>Download</span>
+        </div>
+        <div class="hover-btn">
+          <i class="bi bi-currency-dollar"></i>
+          <span>For Free</span>
+        </div>
+      </button>
+  </body>
+</html>
