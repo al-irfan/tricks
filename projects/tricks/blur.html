@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blur effect on hover</title>
+
+<style>
+body li{
+   list-style: none;
+   
+}
+ul{
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+font-weight: bold;
+}
+li{
+    display: block;
+    transition: .5s;
+}
+ul:hover li{
+    filter: blur(2px);
+}
+ul li:hover{
+    filter: blur(0px);
+}
+
+</style>
+
+
+</head>
+<body>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+    </ul>
+
+</body>
+</html>

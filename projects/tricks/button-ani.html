@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>underline animation</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      button {
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        color: white;
+        background-color: aqua;
+        border: 0;
+      }
+      /* button::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: rgb(79, 209, 79);
+        transform: scale(0);
+        transition: transform 0.3s ease;
+        transform-origin: left;
+      } */
+      button :hover::after {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <button>click me</button>
+    <button>click me</button>
+  </body>
+</html>
